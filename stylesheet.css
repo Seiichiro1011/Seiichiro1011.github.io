@@ -1,0 +1,174 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+}
+.sei{
+  color:skyblue;
+}
+  .title {
+    margin-right: auto;
+  }
+   
+  .menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+img{
+  width:700px;
+  height:500px;
+  display:block;
+  margin:auto;
+}
+p{
+ text-align:center;
+ font-size:2em;
+}
+.mountain{
+  font-size:1em;
+}
+div.box{
+  background-image: url(DSC_0836.JPG);
+}
+
+.box {
+  position   : relative;
+  max-width  : 700px;
+  height     : 500px;
+  margin     : auto;
+  overflow   : hidden;
+}
+
+
+.box .bgImg {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0;
+  animation  : bgAnime 28s infinite;   /* 4画像 × 各7s = 28s */
+}
+
+
+.box .src1 {
+  background-image : url(IMG_3406.jpg);   /* 背景の画像を指定 */
+}
+.box .src2 {
+  background-image : url(IMG_3578.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 7s;
+}
+.box .src3 {
+  background-image : url(IMG_5074.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 14s;
+}
+.box .src4 {
+  background-image : url(IMG_6878.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 21s;
+}
+
+@keyframes bgAnime {
+   0% { opacity: 0; }
+   9% { opacity: 1; }
+  25% { opacity: 1; }
+  34% { opacity: 0; }
+ 100% { opacity: 0; }
+}
+
+
+.box .boxString{
+  position   : absolute;
+  display    : inline-block;
+  padding    : 20px;
+  background : rgba(0, 127, 255, 0.7);          /* 半透明の青 */
+  color      : #fff;
+  top        : 50%;                               /* 中央寄せ */
+  left       : 50%;
+  transform  : translate(-50%,-50%);
+  z-index    : 11;
+}
+
+table{
+  margin:auto;
+  }
+
+  * {
+  margin: 0;
+}
+
+footer {
+  height: auto;
+  color: #fff;
+  background-color:skyblue;
+}
+
+footer .container {
+  max-width: 1200px;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+/* ----------------------------- */
+
+.footA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footA p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+/* ----------------------------- */
+
+.footB {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footB ul {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.footB a {
+  display: block;
+  padding: 0;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 0px;
+  line-height: 20px;
+  border-bottom: 3px solid #000;
+  transition: 0.5s;
+  letter-spacing: 3px;
+}
+
+.footB a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+@media(min-width:1024px) {
+  .footB ul {
+    display: flex;
+  }
+
+  .footB a {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
